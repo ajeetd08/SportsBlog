@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+        integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+    <style type="text/css">
+        .form {
+            padding: 30px 40px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+            /*TEST*/
+        }
+
+        .form-control label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .form-control input {
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            display: block;
+            font-family: inherit;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+
+        /*BEFORE SUBMIT*/
+        .form-group i {
+            visibility: hidden;
+        }
+
+        .form-group small {
+            visibility: hidden;
+        }
+
+        /**/
+
+        /*sUCCESS CLASS*/
+        .form-group.success input {
+            border-color: #2ecc71;
+        }
+
+        .form-group.success textarea {
+            border-color: #2ecc71;
+        }
+
+        .form-group.success i.fa-check-circle {
+            visibility: visible;
+            color: #2ecc71;
+        }
+
+        /**/
+
+        /*ERROR CLASS*/
+        .form-group.error input {
+            border-color: #e74c3c;
+        }
+
+        .form-group.error textarea {
+            border-color: #e74c3c;
+        }
+
+        .form-group.error i.fa-exclamation-circle {
+            visibility: visible;
+            color: #e74c3c;
+        }
+
+        .form-group.error small {
+            color: #e74c3c;
+            visibility: visible;
+        }
+
+        /**/
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-book-reader fa-3x mx-3"></i> NFLBlog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-right text-light"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../src/Index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-control" id="fullname" placeholder="namehere">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-group">
+                <label>SubjectLine</label>
+                <input type="text" class="form-control" id="subject" placeholder="subject">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <button class="btn btn-primary btn-lg" id="myBtn" onclick="return false;">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row text-left">
+                <div class="col-md-5 col-md-5">
+                    <h1 class="text-light">About Us</h1>
+                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <p class="pt-4 text-muted"><span>COPYRIGHT 2020</span> Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="text-light">
+                        Newsletter
+                    </h4>
+                    <p class="text-muted">Stay Updated</p>
+                    <form class="form-inline">
+                        <div class="col pl-">
+                            <div class="input-group pr-5">
+                                <input type="text" class="form-control bg-dark text-white" placeholder="Email">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p class="text-muted">Let us be social</p>
+                    <div class="column">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+    <script type="text/javascript">
+        const formTag = document.getElementById('form');
+        const fullNameTag = document.getElementById('fullname');
+        const emailTag = document.getElementById('email');
+        const subjectTag = document.getElementById('subject');
+        const messageTag = document.getElementById('message');
+
+
+        window.onload = function () {
+            document.getElementById("myBtn").addEventListener("click", function () {
+
+                checkInputs(true);
+            });
+        }
+
+        function checkInputs(allGood) {
+
+            //let allGood = true;
+            const fullNameValue = fullNameTag.value.trim();
+            const emailValue = emailTag.value.trim();
+            const subjectValue = subjectTag.value.trim();
+            const messageValue = messageTag.value.trim();
+
+            if (fullNameValue === '') {
+                //show error, add error class
+                setErrorFor(fullNameTag, 'Name cant be blank');
+            } else {
+                //add success class to form group on div
+                setSuccessFor(fullNameTag);
+            }
+
+            if (emailValue === '') {
+                allGood = false;
+                setErrorFor(emailTag, 'Email cannot be blank');
+            } else if (!isEmail(emailValue)) {
+                allGood = false;
+                setErrorFor(emailTag, 'Email is invalid');
+            } else {
+                setSuccessFor(emailTag);
+            }
+
+            if (subjectValue === '') {
+                //show error, add error class
+                allGood = false;
+                setErrorFor(subjectTag, 'Subject cant be blank');
+            } else {
+                //add success class to form group on div
+                setSuccessFor(subjectTag);
+            }
+
+            if (messageValue === '') {
+                allGood = false;
+                //show error, add error class
+                setErrorFor(messageTag, 'Message cant be blank');
+            } else if (messageValue.length < 10) {
+                allGood = false;
+                setErrorFor(messageTag, 'Message must be more detailed');
+            } else {
+                //add success class to form group on div
+                setSuccessFor(messageTag);
+            }
+
+            if (allGood) {
+                alert('Form validation complete. All fields correct.')
+            } else {
+                alert('correct errors');
+            }
+
+
+
+
+
+        }
+
+        function setErrorFor(inputTag, message) {
+            const formGroup = inputTag.parentElement;
+            const small = formGroup.querySelector('small');
+
+            small.innerText = message;
+
+            //add error class
+            formGroup.className = 'form-group error';
+        }
+
+        function setSuccessFor(inputTag) {
+            const formGroup = inputTag.parentElement;
+            formGroup.className = 'form-group success';
+        }
+
+        function isEmail(email) {
+            const re =
+                /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+
+</body>
+
+</html>
